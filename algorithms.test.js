@@ -20,4 +20,10 @@ test('max should work', () => {
 test('dividers should work', () => {
   expect(algorithms.dividers(10)).toEqual([1, 2, 5]);
 });
+test('checkpalinds should work', () => {
+  expect(algorithms.checkPalindrome("aabaa")).toEqual(true);
+});
+test('adjecent should work', () => {
+  expect(algorithms.adjacentElementsProduct([3,3,3,4,5,3])).toEqual(20);
+});
 

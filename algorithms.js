@@ -51,8 +51,37 @@ function dividers(num) {
 
 }
 
+function checkPalindrome(inputString){
+
+    let arr  = inputString.split("");
+ 
+ 
+    let rev = arr.reverse();
+    let revString = rev.join("");
+     return revString === inputString;
+     
+ }
+ 
+ 
+ function adjacentElementsProduct(inputArray) {
+ 
+     let max = inputArray[0] * inputArray[1];
+     for(let i = 0; i < inputArray.length - 1 ; i++ ){
+         // let a :number = 0 ;
+ 
+          let curMul = inputArray[i] * inputArray[i + 1];
+ 
+          if(curMul > max){
+              max = curMul;
+          }
+ 
+     }
+ 
+     return max;
+ } 
 
 
-module.exports = { factorial, plus, bubbleSort, max, dividers };
+
+module.exports = { factorial, plus, bubbleSort, max, dividers, checkPalindrome ,adjacentElementsProduct };
 
 
