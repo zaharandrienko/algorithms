@@ -23,7 +23,18 @@ test('dividers should work', () => {
 test('checkpalinds should work', () => {
   expect(algorithms.checkPalindrome("aabaa")).toEqual(true);
 });
+
+
+
 test('adjecent should work', () => {
   expect(algorithms.adjacentElementsProduct([3,3,3,4,5,3])).toEqual(20);
 });
+
+
+test('binary search test', () => {
+  expect(algorithms.binarySearch([3,5,7,9,10,33], 7)).toEqual(true);
+});
+
+
+
 
